@@ -14,7 +14,16 @@ public class Bee extends Actor
      */
     public void act()
     {
-        move(1);
+        if (Greenfoot.isKeyDown("d"))
+        {
+            move(3);
+        }
+        
+        if (Greenfoot.isKeyDown("a"))
+        {
+            move(-3);
+        }
+        
         if (isTouching(Flower.class))
         {
             removeTouching(Flower.class);

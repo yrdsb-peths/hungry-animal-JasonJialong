@@ -1,12 +1,21 @@
 #Greenfoot project file
 class.Bee.image=bee.png
 class.Flower.image=flower2.png
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
+dependency1.from=MyWorld
+dependency1.to=Bee
+dependency1.type=UsesDependency
+dependency2.from=MyWorld
+dependency2.to=Flower
+dependency2.type=UsesDependency
+dependency3.from=Bee
+dependency3.to=Flower
+dependency3.type=UsesDependency
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=416
+editor.fx.0.y=33
 height=744
-package.numDependencies=0
+package.numDependencies=3
 package.numTargets=3
 project.charset=UTF-8
 publish.hasSource=false
