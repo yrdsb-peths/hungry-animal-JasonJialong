@@ -30,6 +30,7 @@ public class Bomb extends Actor
         //When the game is lost
         if (isTouching(Bee.class))
         {
+            removeTouching(Bee.class);
             world.gameOver();
             world.removeObject(this);
         }
