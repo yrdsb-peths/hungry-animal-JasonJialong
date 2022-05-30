@@ -8,10 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bee extends Actor
 {
-    /**
-     * Act - do whatever the Bee wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    GreenfootSound beeSound = new GreenfootSound("Scream+22.mp3");
+    
     public void act()
     {
         if (Greenfoot.isKeyDown("d"))
@@ -46,6 +44,7 @@ public class Bee extends Actor
         if (isTouching(Flower.class))
         {
             removeTouching(Flower.class);
+            beeSound.play();
             
             Meadows world = (Meadows) getWorld();
             world.createFlower();
