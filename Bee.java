@@ -8,7 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Bee extends Actor
 {
-    GreenfootSound beeSound = new GreenfootSound("Scream+22.mp3");
+    GreenfootSound beeSound = new GreenfootSound("vine-boom.mp3");
+    GreenfootImage bee = new GreenfootImage("images/bee.png");
+    static int size = 100;
+    SimpleTimer clock = new SimpleTimer();
+    
+    /**
+     * Constructor for the bee
+     */
+    public Bee()
+    {
+        setImage(bee);
+        bee.scale(size, size);
+    }
     
     public void act()
     {

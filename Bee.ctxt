@@ -2,7 +2,10 @@
 comment0.target=Bee
 comment0.text=\r\n\ A\ very\ hungry\ bee\r\n\ \r\n\ @author\ Chen\r\n\ @version\ May\ 2022\r\n
 comment1.params=
-comment1.target=void\ act()
+comment1.target=Bee()
+comment1.text=\r\n\ Constructor\ for\ the\ bee\r\n
 comment2.params=
-comment2.target=void\ eat()
-numComments=3
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ eat()
+numComments=4

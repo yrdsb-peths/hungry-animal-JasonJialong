@@ -8,11 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Meadows extends World
 {
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
-    
+    private boolean lose = false;
     public int score = 0;
     Label scoreLabel;
     
@@ -43,6 +39,7 @@ public class Meadows extends World
     {
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
+        lose = true;
     }
     /**
      * Increases score
@@ -59,10 +56,13 @@ public class Meadows extends World
      */
     public void createFlower()
     {
-        Flower flower = new Flower();
-        int x = Greenfoot.getRandomNumber(600);
-        int y = 0;
-        addObject(flower, x, y);
+        if (lose == false)
+        {
+            Flower flower = new Flower();
+            int x = Greenfoot.getRandomNumber(600);
+            int y = 0;
+            addObject(flower, x, y);
+        }
     }
 
 }
