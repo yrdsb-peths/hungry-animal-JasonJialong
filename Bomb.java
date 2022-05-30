@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Flower here.
+ * Write a description of class Bomb here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Flower extends Actor
+public class Bomb extends Actor
 {
     /**
-     * Act - do whatever the Flower wants to do. This method is called whenever
+     * Act - do whatever the Bomb wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
@@ -17,13 +17,21 @@ public class Flower extends Actor
         int x = getX();
         int y = getY()+2;
         setLocation(x, y);
-        
-        //When the game is lost
         Meadows world = (Meadows) getWorld();
+        
+        //If at bottom of the screen
         if (getY() >= world.getHeight())
         {
+            int o = Greenfoot.getRandomNumber(600);
+            int p = 0;
+            setLocation(o, p);
+        }
+        
+        //When the game is lost
+        if (isTouching(Bee.class))
+        {
+            world.gameOver();
             world.removeObject(this);
-            world.createFlower();
         }
     }
 }

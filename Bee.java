@@ -16,12 +16,26 @@ public class Bee extends Actor
     {
         if (Greenfoot.isKeyDown("d"))
         {
-            move(3);
+            move(4);
         }
         
         if (Greenfoot.isKeyDown("a"))
         {
-            move(-3);
+            move(-4);
+        }
+        
+        if (Greenfoot.isKeyDown("s"))
+        {
+            int x = getX();
+            int y = getY()+2;
+            setLocation(x, y);
+        }
+        
+        if (Greenfoot.isKeyDown("w"))
+        {
+            int x = getX();
+            int y = getY()-2;
+            setLocation(x, y);
         }
         
         eat();
@@ -33,7 +47,7 @@ public class Bee extends Actor
         {
             removeTouching(Flower.class);
             
-            MyWorld world = (MyWorld) getWorld();
+            Meadows world = (Meadows) getWorld();
             world.createFlower();
             
             world.increaseScore();
