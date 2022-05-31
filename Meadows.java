@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * The main game world the user plays on
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jason Chen
+ * @version May 2022
  */
 public class Meadows extends World
 {
@@ -29,11 +29,12 @@ public class Meadows extends World
         scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
         
+        //Creates a flower
         createFlower();
     }
     
     /**
-     * Ends the game and draws 'Game Over'
+     * Ends the game and draws 'Game Over' on screen
      */
     public void gameOver()
     {
@@ -41,6 +42,7 @@ public class Meadows extends World
         addObject(gameOverLabel, 300, 200);
         lose = true;
     }
+    
     /**
      * Increases score
      */

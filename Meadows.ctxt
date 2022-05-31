@@ -1,11 +1,11 @@
 #BlueJ class context
 comment0.target=Meadows
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ main\ game\ world\ the\ user\ plays\ on\r\n\ \r\n\ @author\ Jason\ Chen\r\n\ @version\ May\ 2022\r\n
 comment1.params=
 comment1.target=Meadows()
 comment2.params=
 comment2.target=void\ gameOver()
-comment2.text=\r\n\ Ends\ the\ game\ and\ draws\ 'Game\ Over'\r\n
+comment2.text=\r\n\ Ends\ the\ game\ and\ draws\ 'Game\ Over'\ on\ screen\r\n
 comment3.params=
 comment3.target=void\ increaseScore()
 comment3.text=\r\n\ Increases\ score\r\n

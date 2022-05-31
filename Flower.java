@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Flower here.
+ * Food for the bee
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Jason Chen
+ * @version May 2022
  */
 public class Flower extends Actor
 {
@@ -18,7 +18,7 @@ public class Flower extends Actor
         int y = getY()+2;
         setLocation(x, y);
         
-        //When the game is lost
+        //When the bee misses the flower
         Meadows world = (Meadows) getWorld();
         if (getY() >= world.getHeight())
         {

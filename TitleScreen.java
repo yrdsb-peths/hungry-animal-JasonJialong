@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * A Title Screen
  * 
- * @author Jason
+ * @author Jason Chen
  * @version May 2022
  */
 public class TitleScreen extends World

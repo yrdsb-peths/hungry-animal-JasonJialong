@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * A very hungry bee
  * 
- * @author Chen
+ * @author Jason Chen
  * @version May 2022
  */
 public class Bee extends Actor
